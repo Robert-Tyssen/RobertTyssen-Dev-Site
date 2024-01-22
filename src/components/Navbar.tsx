@@ -11,7 +11,7 @@ const Navbar = () => {
   const handleNavClose = () => { setDrawerVisible(false) };
 
   return (
-    <div className='fixed w-full h-20 shadow-lg z-[100]'>
+    <div className='fixed w-full h-20 shadow-lg z-[100] bg-[#ecf0f3]'>
 
       {/* Navbar for larger devices, with horizontal list items */}
       <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
