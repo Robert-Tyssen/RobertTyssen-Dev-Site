@@ -12,15 +12,15 @@ const Main = () => {
     <Box sx={{ display: 'flex', width: '100%', justifyContent: 'center' }}>
       <Box sx={{ py: 16, px: 4, display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', alignContent: 'center', justifyContent: 'center', maxWidth: '1240px' }}>
         <Image
-          className='rounded-full p-8 width-full max-w-[400px]'
+          className='rounded-full p-8 width-full'
           src='/assets/robert-headshot.jpg'
-          width={350}
-          height={350}
+          width={400}
+          height={400}
           alt='Robert Tyssen Photo'
         />
         <Box sx={{ maxWidth: 720 }}>
-          <Typography variant='h2'>Robert Tyssen</Typography>
-          <Typography variant='h3' py={1}>Software Developer</Typography>
+          <Typography variant='h1'>Robert Tyssen</Typography>
+          <Typography variant='h2' py={1}>Software Developer</Typography>
           <Typography>
             I am a dedicated developer and tech enthusiast with over 8 years
             of experience in engineering, software development, and
