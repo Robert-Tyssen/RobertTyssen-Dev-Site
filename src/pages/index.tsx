@@ -18,8 +18,8 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       {/* Main container */}
-      <Box sx={{ display: 'flex', justifyContent: 'center', py: 8, mx: 4 }}>
-        <Box sx={{ maxWidth: 'md' }}>
+      <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: 'background.default', }}>
+        <Box sx={{ maxWidth: 'md', px: 4, }}>
           <Hero />
           <About />
           <Experience />

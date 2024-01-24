@@ -1,20 +1,40 @@
-import { Box, Grid, Typography } from '@mui/material';
+import { Box, Grid, Link, Paper, Typography } from '@mui/material';
 import Image from 'next/image';
 
 const About = () => {
+
+  const actionScriptLink = (
+    <Link href='https://en.wikipedia.org/wiki/ActionScript#' target='_blank'>ActionScript</Link>
+  );
+
   return (
     <Box sx={{ py: '80px' }} id='about'>
-      <Typography variant='h2'>About Me</Typography>
-      <Grid container spacing={2}>
+      <Typography variant='h2' gutterBottom>About Me</Typography>
+      <Grid container spacing={4}>
 
         <Grid item xs={12} md={8}>
-          <Typography>
-            TO BE COMPLETED
+
+          <Typography paragraph>
+            Hi, I'm Rob - thanks for visiting my website!
           </Typography>
+
+          <Typography paragraph>
+            I love building cool things out of code. I got my start in
+            programming in 2008, building and modding Flash games using <>{actionScriptLink}</>.
+            I learned a lot of lessons the hard way, but had tons of fun solving problems and
+            finding ways to continuously improve my projects.
+          </Typography>
+
+          <Typography paragraph>
+            In 2010 I went to school at the University of Ottawa to earn bachelors degrees
+            in Chemical Engineering and Computing Technology. This combination of studies
+            gave me the unique opportunity to solve complex problems with code.
+          </Typography>
+
         </Grid>
 
         <Grid item xs={12} md={4}>
-          <Box sx={{display: 'flex', justifyContent: 'center'}}>
+          <Box sx={{ display: 'flex', justifyContent: 'center' }}>
             <Image
               className='rounded-full'
               src='/assets/robert-headshot.jpg'
@@ -24,7 +44,8 @@ const About = () => {
             />
           </Box>
         </Grid>
-      </Grid>
+        
+      </Grid>      
     </Box>
   );
 }

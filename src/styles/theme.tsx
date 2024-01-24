@@ -8,6 +8,12 @@ const montserrat = Montserrat({
 });
 
 const appTheme = createTheme({
+  palette: {
+    background: {
+      default: '#f0f0f0',
+      paper: '#ffffff',
+    },
+  },
   typography: {
     fontFamily: `${montserrat.style.fontFamily}, Arial`,
     h1: {
@@ -20,6 +26,10 @@ const appTheme = createTheme({
     },
     h3: {
       fontSize: '1.75rem',
+      fontWeight: 'bold',
+    },
+    h4: {
+      fontSize: '1.5rem',
       fontWeight: 'bold',
     },
     body1: {
