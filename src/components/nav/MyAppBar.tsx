@@ -2,16 +2,16 @@ import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 import { AppBar, Avatar, Box, Button, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography } from '@mui/material';
 import { useState } from 'react';
 
-const ResponsiveAppBar = () => {
+const MyAppBar = () => {
 
   const [drawerOpen, setDrawerOpen] = useState(false);
   const handleDrawerToggle = () => setDrawerOpen((prev) => !prev);
 
   const navItems: any[] = [
-    {title: 'Home', ref: '/'},
-    {title: 'About', ref: '/'},
-    {title: 'Projects', ref: '/'},
-    {title: 'Work', ref: '/'}
+    { title: 'Home', ref: '/' },
+    { title: 'About', ref: '/#about' },
+    { title: 'Experience', ref: '/#experience' },
+    { title: 'Projects', ref: '/#projects' },
   ];
 
   const drawerWidth = 400;
@@ -24,7 +24,7 @@ const ResponsiveAppBar = () => {
       <List>
         {navItems.map((item) => (
           <ListItem key={item} disablePadding>
-            <ListItemButton>
+            <ListItemButton href={item.ref}>
               <ListItemText primary={item.title} />
             </ListItemButton>
           </ListItem>
@@ -61,7 +61,7 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} justifyContent='flex-end'>
             {navItems.map((item) => (
-              <Button variant='text' sx={{ p:2, color: 'white' }} href={item.ref}>{item.title}</Button>
+              <Button key={item} variant='text' sx={{ p: 2, color: 'white' }} href={item.ref}>{item.title}</Button>
             ))}
           </Box>
 
@@ -89,4 +89,4 @@ const ResponsiveAppBar = () => {
   );
 }
 
-export default ResponsiveAppBar;
+export default MyAppBar;

@@ -1,8 +1,12 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Head from 'next/head'
-import Main from '../components/Main';
-import ResponsiveAppBar from '../components/ResponsiveAppBar';
+import Hero from '../components/sections/Hero';
+import MyAppBar from '../components/nav/MyAppBar';
+import { Box } from '@mui/material';
+import About from '@/components/sections/About';
+import Experience from '@/components/sections/Experience';
+import Projects from '@/components/sections/Projects';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -13,7 +17,16 @@ export default function Home() {
         <title>Robert Tyssen | Software Developer</title>
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
-      <Main />
+      {/* Main container */}
+      <Box sx={{ display: 'flex', justifyContent: 'center', py: 8, mx: 4 }}>
+        <Box sx={{ maxWidth: 'md' }}>
+          <Hero />
+          <About />
+          <Experience />
+          <Projects />
+        </Box>
+      </Box>
+
     </div>
   )
 }
