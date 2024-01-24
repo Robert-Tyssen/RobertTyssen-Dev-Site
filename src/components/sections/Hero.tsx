@@ -26,17 +26,12 @@ const Hero = () => {
         </Typography>
         <Box sx={{ py: 2 }}>
           <Button
-            variant='contained'
-            startIcon={<Person2RoundedIcon />}
-          >
-            About Me
-          </Button>
-          <Box sx={{ m: 1, display: 'inline' }} />
-          <Button
             variant='outlined'
             startIcon={<DownloadRoundedIcon />}
+            href='/robert-tyssen-resume.pdf'
+            download={'Robert-Tyssen-Resume'}
           >
-            Resume
+            Download Resume
           </Button>
         </Box>
         <Box>
