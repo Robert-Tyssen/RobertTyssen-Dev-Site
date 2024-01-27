@@ -37,7 +37,7 @@ const Skills = () => {
         </Stack>
         <Typography sx={{ pt: 4 }}>
           These are just some of the skills and technologies I've been into recently!
-          I am continuously learning, and always looking for growth opportunities.
+          I am continuously learning, and always looking for new growth opportunities.
         </Typography>
       </Box>
     </Paper>

@@ -27,7 +27,7 @@ const Hero = () => {
           </Typography>
           <Box sx={{ py: 2 }}>
             <Button
-              variant='outlined'
+              variant='contained'
               startIcon={<DownloadRoundedIcon />}
               href='/robert-tyssen-resume.pdf'
               download={'Robert-Tyssen-Resume'}
@@ -35,13 +35,7 @@ const Hero = () => {
               Download Resume
             </Button>
           </Box>
-          <Box>
-            <IconButton edge={'start'} color='primary' size='large'><FaLinkedin /></IconButton>
-            <Box sx={{ m: 1, display: 'inline' }} />
-            <IconButton edge={'start'} color='primary' size='large'><FaGithub /></IconButton>
-            <Box sx={{ m: 1, display: 'inline' }} />
-            <IconButton edge={'start'} color='primary' size='large'><EmailRoundedIcon /></IconButton>
-          </Box>
+          
         </Box>
       </Paper>
     </Box>
