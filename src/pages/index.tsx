@@ -1,13 +1,11 @@
-import Image from 'next/image'
-import { Inter } from 'next/font/google'
-import Head from 'next/head'
-import Hero from '../components/sections/Hero';
-import MyAppBar from '../components/nav/MyAppBar';
-import { Box } from '@mui/material';
 import About from '@/components/sections/About';
+import Contact from '@/components/sections/Contact';
 import Experience from '@/components/sections/Experience';
 import Projects from '@/components/sections/Projects';
-import Contact from '@/components/sections/Contact';
+import { Box } from '@mui/material';
+import { Inter } from 'next/font/google';
+import Head from 'next/head';
+import Hero from '../components/sections/Hero';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,8 +17,12 @@ export default function Home() {
         <meta name="viewport" content="initial-scale=1, width=device-width" />
       </Head>
       {/* Main container */}
-      <Box sx={{ display: 'flex', justifyContent: 'center', bgcolor: 'background.default', }}>
-        <Box sx={{ maxWidth: 'md', px: 4, }}>
+      <Box sx={{
+        display: 'flex',
+        justifyContent: 'center',
+        bgcolor: 'background.default',
+      }}>
+        <Box sx={{ maxWidth: 'md', px: 4, pt: 8 }}>
           <Hero />
           <About />
           <Experience />

@@ -1,17 +1,11 @@
-import { Box, Button, IconButton, Paper, Toolbar, Typography } from '@mui/material';
-import Image from 'next/image';
-import React from 'react';
-import Person2RoundedIcon from '@mui/icons-material/Person2Rounded';
 import DownloadRoundedIcon from '@mui/icons-material/DownloadRounded';
-import { FaGithub, FaLinkedin } from "react-icons/fa";
-import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
+import { Box, Button, Paper, Typography } from '@mui/material';
 
 const Hero = () => {
 
   return (
-
-    <Box sx={{ display: 'inline-flex', flexWrap: 'wrap', alignItems: 'center', alignContent: 'center', justifyContent: 'center', minHeight: '100vh', height: '100vh' }}>
-      <Paper variant='outlined' sx={{p: 4, borderRadius: 8}} >
+    <Box id='hero' sx={{ py: 4, }} >
+      <Paper variant='outlined' sx={{ p: 4, borderRadius: 8 }} >
         <Box>
           <Typography variant='h4' color={'primary'} gutterBottom>Hi, my name is</Typography>
           <Typography variant='h1'>Robert Tyssen</Typography>
@@ -35,7 +29,6 @@ const Hero = () => {
               Download Resume
             </Button>
           </Box>
-          
         </Box>
       </Paper>
     </Box>
