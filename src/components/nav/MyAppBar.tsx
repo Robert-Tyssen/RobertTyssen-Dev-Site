@@ -16,10 +16,12 @@ const MyAppBar = () => {
 
   const drawerWidth = 400;
 
+  const myLogo = (<Avatar src='/assets/robert-headshot.jpg' />)
+
   const drawer = (
     <Box onClick={handleDrawerToggle}>
       <ListItem>
-        <Avatar><Typography variant='h6'>RT</Typography></Avatar>
+        {myLogo}
       </ListItem>
       <List>
         {navItems.map((item) => (
@@ -49,14 +51,7 @@ const MyAppBar = () => {
             >
               <MenuRoundedIcon />
             </IconButton>
-            <Avatar>
-              <Typography
-                variant='h6'
-                component='div'
-              >
-                RT
-              </Typography>
-            </Avatar>
+            {myLogo}
           </Toolbar>
 
           <Box sx={{ display: { xs: 'none', sm: 'block' } }} justifyContent='flex-end'>
