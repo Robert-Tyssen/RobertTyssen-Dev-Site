@@ -1,5 +1,6 @@
 import { Box, Grid, Link, Paper, Typography } from '@mui/material';
 import Image from 'next/image';
+import Skills from './Skills';
 
 const About = () => {
 
@@ -44,8 +45,11 @@ const About = () => {
             />
           </Box>
         </Grid>
-        
-      </Grid>      
+
+      </Grid>
+      <Box sx={{py: 4}}>
+        <Skills />
+      </Box>
     </Box>
   );
 }
