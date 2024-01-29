@@ -29,14 +29,15 @@ const Skills = () => {
       <Box>
         <Typography variant='h4' paragraph>Technical Skills</Typography>
         <Stack spacing={2} direction='row' flexWrap='wrap' useFlexGap >
-          {skillList.map((e) => (
+          {skillList.map((e, index) => (
             <Chip
+              key={index}
               label={e.title}
             />
           ))}
         </Stack>
         <Typography sx={{ pt: 4 }}>
-          These are just some of the skills and technologies I've been into recently!
+          These are just some of the skills and technologies {"I've"} been into recently!
           I am continuously learning, and always looking for new growth opportunities.
         </Typography>
       </Box>

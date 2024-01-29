@@ -80,12 +80,12 @@ const Experience = () => {
       <Typography variant='h2' gutterBottom>Work Experience</Typography>
 
       <Typography paragraph>
-        Here's a timeline of my professional experience and accomplishments.
+        {`Here's a timeline of my professional experience and accomplishments.`}
       </Typography>
 
       <Box paddingTop={2}>
-        {myEmployers.map((e) => (
-          <Grid container spacing={2} paddingBottom={4}>
+        {myEmployers.map((e, index) => (
+          <Grid container spacing={2} paddingBottom={4} key={index}>
 
             <Grid item xs={12} md={3}>
               <Typography variant='h5'>{e.name}</Typography>
@@ -93,8 +93,8 @@ const Experience = () => {
 
             <Grid item xs={12} md={9}>
               <Paper variant='outlined' sx={{ p: 4, borderRadius: 8 }}>
-                {e.jobs.map((j) => (
-                  <Box>
+                {e.jobs.map((j, index) => (
+                  <Box key={index}>
                     <Typography variant='h5'>{j.title}</Typography>
                     <Typography fontWeight='600'>{j.timespan}</Typography>
                     <Typography paragraph>{j.description}</Typography>

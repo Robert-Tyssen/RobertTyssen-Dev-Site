@@ -9,7 +9,7 @@ const Hero = () => {
         <Box>
           <Typography variant='h4' color={'primary'} gutterBottom>Hi, my name is</Typography>
           <Typography variant='h1'>Robert Tyssen</Typography>
-          <Typography variant='h3' py={1}>I'm a software developer</Typography>
+          <Typography variant='h3' py={1}>{"I'm a software developer"}</Typography>
           <Typography>
             I am a dedicated developer and tech enthusiast with over 8 years
             of experience in engineering, software development, and

@@ -16,7 +16,7 @@ const About = () => {
         <Grid item xs={12} md={8}>
 
           <Typography paragraph>
-            Hi, I'm Rob - thanks for visiting my website!
+            {"Hi, I'm Rob - thanks for visiting my website!"}
           </Typography>
 
           <Typography paragraph>
