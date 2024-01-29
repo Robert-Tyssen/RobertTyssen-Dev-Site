@@ -3,7 +3,7 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 const montserrat = Montserrat({
   subsets: ["latin"],
-  weight: ["300", "400", "700"],
+  weight: ["300", "400", "600", "700"],
   style: ["normal", "italic",],
 });
 
@@ -32,9 +32,14 @@ const appTheme = createTheme({
       fontSize: '1.5rem',
       fontWeight: 'bold',
     },
+    h5: {
+      fontSize: '1.25rem',
+      fontWeight: 'bold',
+    },
     body1: {
       fontSize: '1rem',
-    }
+    },
+
   },
 });
 

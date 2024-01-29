@@ -6,9 +6,8 @@ const Contact = () => {
     <Box sx={{ py: 4 }}>
       <Typography variant='h4' paragraph>Contact</Typography>
       <Typography paragraph>
-        Thanks for checking out my site! Feel free to reach out
-        if you're interested in learning more about me
-        or the work that I do. You can find me at:
+        Thanks for checking out my site! I am always updating content, so feel free to visit again later for updates.
+        If you'd like to learn more about me or the work that I do, I'd love to chat more!
       </Typography>
 
       {/* Contact info button stack */}

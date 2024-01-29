@@ -9,7 +9,7 @@ const About = () => {
   );
 
   return (
-    <Box sx={{ py: '80px' }} id='about'>
+    <Box sx={{ py: 4 }} id='about'>
       <Typography variant='h2' gutterBottom>About Me</Typography>
       <Grid container spacing={4}>
 
